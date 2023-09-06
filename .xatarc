@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://robertmalyon-s-workspace-a4tqi3.eu-west-1.xata.sh/db/liver",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
