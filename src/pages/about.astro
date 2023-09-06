@@ -35,7 +35,14 @@ let posts = await xata.db.post.getAll();
         backgrounds, bringing different personalities, experiences and skills to
         the job. This is what makes our team so special.
       </p>
-      <p>{posts}</p>
+      <div class="w-full max-w-5xl mt-16">
+        {posts.length === 0 && <p>No blog posts found</p>}
+        {posts.map((posts) => (
+          <div class="mb-16">
+            <p class="text-xs mb-2 text-purple-950 dark:text-purple-200">
+              {posts.title?.toString()}
+            </p>
+            </div>
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
